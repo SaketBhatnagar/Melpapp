@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+
+:root {
+  font-size: 11px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+}
+
+/* top header section */
+
+/* LARGE SCREEN */
+
+.top {
+  padding: 1.4% 3% 1.2% 3%;
+  border-bottom: 3px solid rgb(231, 231, 231);
+}
+
+.header {
+  padding-bottom: 2.2%;
+}
+
+.header img {
+  height: 70px;
+  width: auto;
+}
+
+.schedule {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meeting_with {
+  display: flex;
+  width: 35%;
+  /* background-color: rgb(155, 152, 152); */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.meeting_with img {
+  padding-right: 2%;
+  height: 30px;
+  width: auto;
+}
+
+.meeting_with p {
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.meeting_button {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+  /* background-color: rgb(155, 152, 152); */
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.button_empty {
+  color: #ee4136;
+  border: 2.5px solid #ee4136;
+  padding: 3.5% 4%;
+  border-radius: 8%;
+}
+
+.button_filled {
+  background-color: #ee4136;
+  color: white;
+  padding: 3.5% 8%;
+  border-radius: 8%;
+  margin-left: 15px;
+}
+
+/* body section */
+
+.bottom {
+  padding: 4% 3% 1.2% 3%;
+  display: flex;
+  gap: 30px;
+}
+
+/*  left part */
+
+.mb-5 {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+
+.greybg {
+  background: #f2f2f2;
+}
+
+.form-label {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.duration {
+  float: left;
+}
+
+.timezone {
+  float: right;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222020;
+  overflow-wrap: break-word;
+  /* Firefox */
+}
+
+.upload-button {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.file-upload-labels {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.upload-label {
+  border: 1px solid #ccc;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222020;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 70%;
+  padding: 12px 20px;
+}
+
+.upload {
+  display: none;
+}
+
+.about {
+  width: 45%;
+}
+
+.form input,
+.form textarea {
+  margin-top: 10px;
+}
+
+.new-form-label {
+  width: 491px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* right part */
+
+.when {
+  width: 50%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  justify-content: space-evenly;
+}
+
+.date {
+  flex-basis: 60%;
+  /* background-color: blue; */
+  border: 2px solid blue;
+}
+
+.slot {
+  height: 27%;
+  /* background: green; */
+  /* padding: 0px 30px; */
+}
+.slot ul {
+  list-style-type: none;
+  overflow: scroll;
+  -moz-scrollbar-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: stretch; */
+  /* height: 27%; */
+  height: 197px;
+  align-items: center;
+  /* background: black; */
+}
+
+.slot ul ::-webkit-scrollbar-track {
+  background-color: red;
+  width: 10px;
+}
+
+.slot ul li {
+  background-color: white;
+  /* width: 60px; */
+  /* align-self: stretch; */
+  width: 97%;
+  /* height: 80px; */
+  padding: 20px 10px;
+  /* margin-left: 50px; */
+  border: 1px solid black;
+
+  margin: 10px 0px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.slot ul li input {
+  position: absolute;
+
+  right: 30px;
+  width: 15px;
+  height: 15px;
+}
+
+.slot div:first-child {
+  /* margin-bottom: 30px; */
+  padding: 15px;
+}
+
+.slot div:first-child span {
+  color: red;
+}
+
+.about input {
+  font-size: 1rem;
+}
